@@ -1,0 +1,236 @@
+/* Angel Cota
+Mesa Community College
+Final Web Project
+9/25/24
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*global styles*/
+
+body {
+    background-color: #F1F0EE;
+    color: #2D364A;
+    font-family: "open sans", sans-serif;
+    font-size: medium;
+    
+}
+
+header {
+    /*configure background*/
+    background-color: #CECFCA;
+    background-image: url(book.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 75px;
+    line-height: 400%;
+    
+/*text properties*/
+text-indent: 1em;
+text-align: center;
+    color: #4A2129
+
+}
+
+h1 {
+    margin-bottom: 0;
+    
+    font-family: Montserrat, 'Times New Roman', Times, serif; 
+    
+
+
+}
+
+nav {
+    font-weight: bold;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    text-align: center;
+    
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav li {
+
+    display: inline;
+    
+    
+}
+
+nav a {
+    
+    text-align: center;
+    text-decoration: none;
+    padding-right: 0.5em;
+    padding-left: 0.5em
+    
+}
+
+nav a:link {
+    color: #517768
+}
+
+nav a:visited {
+    color: #2D364A
+}
+
+nav a:hover {
+    color: #4A2129
+}
+.container {
+    text-align: center;
+}
+
+h2 {
+    font-family: Montserrat, "open sans";
+    
+    color: #517768
+
+    
+}
+
+h3 {
+    font-family: Montserrat, "open sans";
+}
+
+footer {
+    font-family: "open sans";
+    font-size: 95%;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 800px) {
+flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container {
+    flex-direction: column;
+}
+
+header {
+    background-image: url(book.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 37px;
+    line-height: 400%;
+    
+/*text properties*/
+text-indent: 1em;
+text-align: center;
+}
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+   
+    nav li {
+        border-bottom: none;
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+       
+        
+        
+        
+    }
+
+
+    section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+ 
+    
+   
+   
+   
+   
+    .image container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(books.png)
+
+
+   }
+
+   img {
+    width: 100%;
+   }
+   
+}
+
+@media screen and (width: 768px) {
+    header {
+        /*configure background*/
+        background-color: #CECFCA;
+        background-image: url(book.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 75px;
+        line-height: 400%;
+        
+    /*text properties*/
+    text-indent: 1em;
+    text-align: center;
+        color: #4A2129
+    
+    }
+
+    img {
+        width: 50%;
+       }
+}
+
+@media screen and (width: 425px) {
+    header {
+        /*configure background*/
+        background-color: #CECFCA;
+        background-image: url(book.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 60px;
+        line-height: 400%;
+        
+    /*text properties*/
+    text-indent: 1em;
+    text-align: center;
+        color: #4A2129
+    
+    }
+}
+
+@media screen and (width: 375px) {
+    header {
+        /*configure background*/
+        background-color: #CECFCA;
+        background-image: url(book.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 50px;
+        line-height: 400%;
+        
+    /*text properties*/
+    text-indent: 1em;
+    text-align: center;
+        color: #4A2129
+    
+    }
+}
