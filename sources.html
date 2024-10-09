@@ -19,16 +19,33 @@
         <h1>The Ideal Pastime</h1>
     </header>
     <nav><!--Creating the navigation that will be at the top of each page-->
-        <ul>
+        <ul class="nav-list" id="navi-list">
             <li><a href=index.html>Introduction</a></li>
             <li> <a href="content.html">Benefits</a></li>
             <li><a href="about.html">About</a></li>
             <li> <a href="sources.html">Sources</a></li>
         </ul>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+       
+
+
 
     </nav>
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const naviList = document.getElementById('navi-list');
+
+        toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+    })
+
+    </script>
 <main>
-<br><br><h2>Sources</h2>
+    <br><br><h2>Sources</h2>
     <ul>
         <li>7 Ways Reading Does a brain Good. &lpar;2021, June 22&rpar;. Healthline. <a href=https://www.healthline.com/health/does-reading-make-you-smarter>https://www.healthline.com/health/does-reading-make-you-smarter</a>
         </li>
