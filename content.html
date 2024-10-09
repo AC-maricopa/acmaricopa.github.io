@@ -19,23 +19,42 @@
         <h1>The Ideal Pastime</h1>
     </header>
     <nav><!--Creating the navigation that will be at the top of each page-->
-        <ul>
+        <ul class="nav-list" id="navi-list">
             <li><a href=index.html>Introduction</a></li>
             <li> <a href="content.html">Benefits</a></li>
             <li><a href="about.html">About</a></li>
             <li> <a href="sources.html">Sources</a></li>
         </ul>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+       
+
+
 
     </nav>
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const naviList = document.getElementById('navi-list');
+
+        toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+    })
+
+    </script>
+
+
 
     <div class="container">
         <img src="Book2.png" alt="Open Book" width="409">
-           <i><small><br>Image: Open Book <br> Source: Pixaby</small></i>
+        <i><small><br>Image: Open Book <br> Source: Pixaby</small></i>
     </div>
     <main><!--Informing readers on the benefits of reading-->
         <br><br><h2>Reading and its Benefits</h2>
     <ul>
-      <li><h3><strong>Vocabulary and Communication</strong></h3>
+        <li><h3><strong>Vocabulary and Communication</strong></h3>
       One of the main benefits of reading is the improvement of <em>vocabulary</em>. Vocabulary is essential in many different parts of one&apos;s life. This includes not only job and college searching, but also in conversation. It has been proven that the more one engages in reading, the more their vocabulary is <em>enhanced</em>. This means improved communication skills. Effective communication is an important part of one&apos;s life, and it&apos;s important to take advantage of this opportunity that books provide. 
     </li>
     <li><h3><strong>Reading and Mental Health</strong></h3>
