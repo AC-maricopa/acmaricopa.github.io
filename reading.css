@@ -16,6 +16,7 @@ body {
     font-family: "open sans", sans-serif;
     font-size: medium;
     line-height: 1.5;
+   
     
 }
 
@@ -85,6 +86,20 @@ nav a:visited {
 nav a:hover {
     color: #4A2129
 }
+
+.menu {
+    display: none;
+}
+
+
+.menu-line {
+    width: 20px;
+    height: 3px;
+    background-color: #2D364A;
+    margin-bottom: 4px;
+}
+
+
 .container {
     text-align: center;
 }
@@ -131,16 +146,53 @@ text-indent: 1em;
 text-align: center;
 }
 
+
+
     nav ul {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-between;
+        
+
+        
+    }
+
+    .nav-list {
+        display: none;
     }
    
+    
     nav li {
+        
+
+        
+
         border-bottom: none;
+        
+        
+        
     }
+
+   
+
+
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 40px;
+        bottom: 50px;
+        right: 10px;
+    }
+
+    .active {
+        display: block;
+    }
+
+    
+
+   
 
     h1 {
         display: flex;
