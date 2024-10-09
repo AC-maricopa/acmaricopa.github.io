@@ -21,17 +21,37 @@
         <h1>The Ideal Pastime</h1>
     </header>
     <nav><!--Creating the navigation that will be at the top of each page-->
-        <ul>
+        <ul class="nav-list" id="navi-list">
             <li><a href=index.html>Introduction</a></li>
             <li> <a href="content.html">Benefits</a></li>
             <li><a href="about.html">About</a></li>
             <li> <a href="sources.html">Sources</a></li>
         </ul>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+       
+
+
+
     </nav>
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const naviList = document.getElementById('navi-list');
+
+        toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+    })
+
+    </script>
+
+    
 
     <div class="container">
-        <img src="books.png" alt="Book display" width="409">
-          <i><small><br>Image: Book display <br> Source: Pixaby</small></i>
+        <img src="Books.png" alt="Display of Books" width="409">
+        <i><small><br>Image: Book display <br> Source: Pixaby</small></i>
     </div>
 
     <main><!--Introducing the topic to the reader-->
@@ -46,4 +66,5 @@
             <br><a href="sitemap.html">sitemap</a>
     </footer> 
 </body>
+
 </html>
